@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+/* Josh Comeau's CSS reset
+https://www.joshwcomeau.com/css/custom-css-reset/  */
+
+
+/* 1. Use a more-intuitive box-sizing model */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+/* 2. Remove default margin */
+* {
+    margin: 0;
+}
+
+body {
+    /* 3. Add accessible line-height */
+    line-height: 1.5;
+    /* 4. Improve text rendering */
+    -webkit-font-smoothing: antialiased;
+}
+
+/* 5. Improve media defaults */
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+}
+
+/* 6. Inherit fonts for form controls */
+input, button, textarea, select {
+    font: inherit;
+}
+
+/* 7. Avoid text overflows */
+p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+}
+
+/* 8. Improve line wrapping */
+p {
+    text-wrap: pretty;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    text-wrap: balance;
+}
+
+/*
+    9. Create a root stacking context
+  */
+#root, #__next {
+    isolation: isolate;
+}
+
+/* ----------------------------- */
+
+:root {
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    min-height: 100svh;
+    display: grid;
+    grid: auto 1fr auto / auto;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #3B0E16;
+    padding: 1rem;
+    gap: 1rem;
+}
+
+nav button {
+    font-size: 2rem;
+    color: white;
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+#content {
+    display: grid;
+    grid: auto / auto;
+    place-content: center;
+    background-color: #571E1A;
+    color: white;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    background-color: #3B0E16;
+    color: white;
+    padding: 1rem;
+}
+
+footer img {
+    display: inline-block;
+    height: 1rem;
+    width: 1rem;
+    margin: 0 0 0 2px;
+}
+
+footer a:visited,
+footer a:link {
+    color: white;
+}
+
+.restaurant-name {
+    font-size: 10rem;
+}
+
+#menu {
+    font-size: 2rem;
+}
+
+.category {
+    border-top: 0.5rem solid #3B0E16;
+}
+
+#menu ul {
+    display: flex;
+    gap: 2rem;
+    justify-content: space-between;
+    list-style: none;
+}
+
+#menu div + div {
+    margin-top: 1rem;
+}
+
+#about {
+    font-size: 2rem;
+    width: 45ch;
+}
